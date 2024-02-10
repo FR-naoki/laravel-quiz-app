@@ -7,4 +7,10 @@ use Illuminate\Http\Request;
 class QuizController extends Controller
 {
     //
+    public function store(Request $request)
+    {
+        //入力内容を検証
+        //データを保存　　　後で実装
+        return view('quizzes.index');
+    }
 }
