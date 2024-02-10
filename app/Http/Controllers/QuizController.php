@@ -13,4 +13,10 @@ class QuizController extends Controller
         //データを保存　　　後で実装
         return view('quizzes.index');
     }
+
+    public function destroy($id)
+    {
+        return json_encode(['message' => 'ID:'.$id.' が削除されるIDです（仮の出力）'])
+    }
 }
+
